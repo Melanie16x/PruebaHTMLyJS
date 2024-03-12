@@ -1,0 +1,31 @@
+<h1>Hola</h1>
+
+<button onclick="ejecutar()">Enviar</button>
+
+<input id="entrada" value=""></input>
+<br>
+<br>
+<label id="idtexto">Cargue algo </label>
+
+<script>
+
+    let ocultar = document.getElementById("idtexto");
+    let error = document.getElementById("idtexto");
+    ocultar.style.display = "none";
+
+    function ejecutar() {
+
+        let texto = document.getElementById("entrada").value;
+       
+        if (texto === "") {
+            error.style.display = "inline";
+            error.style.color = "red";
+            error.style.backgroundColor = "yellow";
+        } else {
+            alert("Usted cargó este texto: " + texto);
+            ocultar.style.display = "none";
+        }
+
+        console.log("Hola consola");
+    }
+</script>
