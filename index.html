@@ -1,4 +1,12 @@
-<h1>Hola</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminario de Actualizacion II</title>
+</head>
+<body>
+    <h1>Hola</h1>
 
 <button onclick="ejecutar()">Enviar</button>
 
@@ -17,7 +25,7 @@
 
         let texto = document.getElementById("entrada").value;
        
-        if (texto === "") {
+        if (texto.trim() === "") {
             error.style.display = "inline";
             error.style.color = "red";
             error.style.backgroundColor = "yellow";
@@ -29,3 +37,6 @@
         console.log("Hola consola");
     }
 </script>
+
+</body>
+</html>
